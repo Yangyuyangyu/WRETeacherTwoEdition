@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_teach_content_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context="com.teacherhelp.activity.teachcontent.TeachContentDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/app_while_tv_bg"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/teachContentDetail_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="@dimen/interval_left"
+                android:background="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/teachContentDetail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/teachContentDetail_img"
+                android:text="古典音乐"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size3" />
+
+            <TextView
+                android:id="@+id/teachContentDetail_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/teachContentDetail_name"
+                android:layout_below="@+id/teachContentDetail_name"
+                android:layout_marginTop="5dp"
+                android:text="(2人)"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/teachContentDetail_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/teachContentDetail_name"
+                android:layout_below="@+id/teachContentDetail_number"
+                android:layout_marginTop="5dp"
+                android:text="民歌"
+                android:textSize="@dimen/text_size2" />
+
+
+            <TextView
+                android:id="@+id/teachContentDetail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/interval_right"
+                android:text="2016-07-24(星期日)"
+                android:textColor="@color/gray_hint"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/teachContentDetail_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/teachContentDetail_time"
+                android:layout_marginRight="@dimen/interval_right"
+                android:layout_marginTop="5dp"
+                android:text="15:00~16:00"
+                android:textColor="@color/gray_hint"
+                android:textSize="@dimen/text_size2" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="使用教材和主要参考资料:"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/teachContentDetail_text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="请输入内容..."
+            android:minHeight="60dp"
+            android:padding="5dp"
+            android:textAlignment="textStart"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="教学目的及要求:"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/teachContentDetail_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="请输入内容..."
+            android:minHeight="60dp"
+            android:padding="5dp"
+            android:textAlignment="textStart"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="教学内容及过程:"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/teachContentDetail_text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="请输入内容..."
+            android:minHeight="60dp"
+            android:padding="5dp"
+            android:textAlignment="textStart"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/teachContentDetail_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@mipmap/add"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="补充说明" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/teachContentDetail_LL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="补充说明:"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/teachContentDetail_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@mipmap/delete2"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/teachContentDetail_text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="请输入内容..."
+            android:minHeight="60dp"
+            android:padding="5dp"
+            android:textAlignment="textStart"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <com.teacherhelp.view.NoScrollGridView
+            android:id="@+id/teachContentDetail_gridview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <com.allen.supertextviewlibrary.SuperTextView
+        android:id="@+id/as_rl_one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        stv:sLeftBottomTextColor="@color/gray_color"
+        stv:sLeftBottomTextColor2="@color/gray_color"
+        stv:sLeftTextString="身份认证"
+        stv:sLineShow="none"
+        stv:sRightIconRes="@mipmap/hsjt"
+        stv:sRightTextMarginRight="30dp"
+        stv:sRightTextString="未上传" />
+
+    <com.allen.supertextviewlibrary.SuperTextView
+        android:id="@+id/as_rl_two"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        stv:sLeftBottomTextColor="@color/gray_color"
+        stv:sLeftBottomTextColor2="@color/gray_color"
+        stv:sLeftTextString="教师认证"
+        stv:sLineShow="none"
+        stv:sRightIconRes="@mipmap/hsjt"
+        stv:sRightTextMarginRight="30dp"
+        stv:sRightTextString="未上传" />
+
+    <com.allen.supertextviewlibrary.SuperTextView
+        android:id="@+id/as_rl_three"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        stv:sLeftBottomTextColor="@color/gray_color"
+        stv:sLeftBottomTextColor2="@color/gray_color"
+        stv:sLeftTextString="毕业认证"
+        stv:sLineShow="none"
+        stv:sRightIconRes="@mipmap/hsjt"
+        stv:sRightTextMarginRight="30dp"
+        stv:sRightTextString="未上传" />
+
+    <com.allen.supertextviewlibrary.SuperTextView
+        android:id="@+id/as_rl_four"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        stv:sLeftBottomTextColor="@color/gray_color"
+        stv:sLeftBottomTextColor2="@color/gray_color"
+        stv:sLeftTextString="资质认证"
+        stv:sLineShow="none"
+        stv:sRightIconRes="@mipmap/hsjt"
+        stv:sRightTextMarginRight="30dp"
+        stv:sRightTextString="未上传" />
+
+</LinearLayout>

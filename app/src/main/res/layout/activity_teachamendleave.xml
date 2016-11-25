@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/include_title"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_origanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/app_while_tv_bg">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="申荣琴行"
+            android:textSize="@dimen/text_size3"
+            android:textColor="@color/black"
+            android:minHeight="40dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/interval_left"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/hsjt"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/interval_right"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wire"
+        android:background="@color/halving_line_vertical"
+        android:layout_marginLeft="@dimen/interval_left"
+        android:layout_marginRight="@dimen/interval_right"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/app_while_tv_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择分校"
+            android:textSize="@dimen/text_size3"
+            android:textColor="@color/black"
+            android:minHeight="40dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/interval_left"
+            />
+
+        <ImageView
+            android:id="@+id/img_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/hsjt"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/interval_right"/>
+
+        <TextView
+            android:id="@+id/tv_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择"
+            android:textSize="@dimen/text_size3"
+            android:textColor="@color/black"
+            android:minHeight="40dp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/img_two"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wire"
+        android:background="@color/halving_line_vertical"
+        android:layout_marginLeft="@dimen/interval_left"
+        android:layout_marginRight="@dimen/interval_right"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_starttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/app_while_tv_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始时间"
+            android:textSize="@dimen/text_size3"
+            android:textColor="@color/black"
+            android:minHeight="40dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/interval_left"
+            />
+
+        <ImageView
+            android:id="@+id/img_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/hsjt"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/interval_right"/>
+
+        <TextView
+            android:id="@+id/tv_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-07-29"
+            android:textSize="@dimen/text_size3"
+            android:textColor="@color/black"
+            android:minHeight="40dp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/img_three"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wire"
+        android:background="@color/halving_line_vertical"
+        android:layout_marginLeft="@dimen/interval_left"
+        android:layout_marginRight="@dimen/interval_right"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_endtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/app_while_tv_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束时间"
+            android:textSize="@dimen/text_size3"
+            android:textColor="@color/black"
+            android:minHeight="40dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/interval_left"
+            />
+
+        <ImageView
+            android:id="@+id/img_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/hsjt"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/interval_right"/>
+
+        <TextView
+            android:id="@+id/tv_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-07-29"
+            android:textSize="@dimen/text_size3"
+            android:textColor="@color/black"
+            android:minHeight="40dp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/img_four"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wire"
+        android:background="@color/halving_line_vertical"
+        android:layout_marginLeft="@dimen/interval_left"
+        android:layout_marginRight="@dimen/interval_right"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size2"
+            android:textColorHint="@color/gray_color"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:layout_marginRight="@dimen/interval_right"
+            android:hint="请输入请假原因"
+            android:minLines="3"
+            android:gravity="left"
+            android:maxLength="50"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        >
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size3"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:layout_marginRight="@dimen/interval_right"
+            android:minHeight="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_login_button_background"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</LinearLayout>

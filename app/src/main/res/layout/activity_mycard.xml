@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <com.teacherhelp.view.RoundImageView
+        android:id="@+id/card_img_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@mipmap/my_icon_head"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/card_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="陈老师"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size3" />
+
+    <ImageView
+        android:id="@+id/card_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="扫一扫加我为联系人"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size3" />
+</LinearLayout>

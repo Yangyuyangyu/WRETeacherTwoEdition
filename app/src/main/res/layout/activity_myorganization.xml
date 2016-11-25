@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/ll_bottom"
+        android:background="@color/background">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_top_bar"
+            android:background="@color/rer_color"
+            >
+
+            <ImageButton
+                android:id="@+id/imgbtn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="16dp"
+                android:background="@color/translucent_background"
+                android:src="@drawable/back_selector" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/tv_titletwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size4"
+                    android:text="申荣琴行"
+                    />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/img_head"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/interval_left"
+                android:layout_marginRight="@dimen/interval_right"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@mipmap/ic_launcher"
+                />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申荣琴行"
+                android:layout_alignTop="@+id/img_head"
+                android:layout_toRightOf="@+id/img_head"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size3"
+                />
+            <RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                style="@style/MyRatingBar"
+                android:numStars="5"
+                android:rating="3.5"
+                android:isIndicator="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_alignLeft="@+id/tv_name"
+                android:layout_alignBottom="@+id/img_head"
+                />
+            <!--<com.hedgehog.ratingbar.RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-3dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@+id/tv_name"
+                android:layout_alignBottom="@+id/img_head"
+                hedgehog:clickable="true"
+                hedgehog:halfstart="true"
+                hedgehog:starCount="5"
+                hedgehog:starEmpty="@mipmap/ratingbar_off"
+                hedgehog:starFill="@mipmap/ratingbar_on"
+                hedgehog:starHalf="@mipmap/ratingbar_helf"
+                hedgehog:starImageHeight="50dp"
+                hedgehog:starImageWidth="40dp"
+                hedgehog:starImagePadding="10dp"/>-->
+            <TextView
+                android:id="@+id/tv_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.0"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/text_size2"
+                android:textColor="@color/rer_color"
+                android:layout_alignBottom="@+id/img_head"
+                android:layout_toRightOf="@+id/ratingbar"
+                android:layout_marginLeft="5dp"
+                />
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="5dp"
+            app:tabIndicatorColor="@color/rer_color"
+            app:tabSelectedTextColor="@color/rer_color"
+            app:tabTextColor="@color/text_color"/>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wire"
+        android:background="@color/halving_line_vertical"
+        android:layout_above="@+id/ll_bottom"/>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/ll_consult"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/app_while_tv_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_launcher"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="咨询"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/text_size2"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/wire"
+            android:layout_height="match_parent"
+            android:background="@color/text_color2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_call"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/app_while_tv_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_launcher"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拨打电话"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/text_size2"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/wire"
+            android:layout_height="match_parent"
+            android:background="@color/text_color2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/ll_feedback"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/app_while_tv_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_launcher"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="意见反馈"
+                android:textColor="@color/text_color3"
+                android:textSize="@dimen/text_size2"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

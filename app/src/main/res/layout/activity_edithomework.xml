@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <RelativeLayout
+        android:id="@+id/eh_rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/app_while_tv_bg"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/eh_img_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:background="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/eh_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/eh_img_head"
+            android:text="古典音乐"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size3" />
+
+        <TextView
+            android:id="@+id/eh_tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/eh_tv_name"
+            android:layout_below="@+id/eh_tv_name"
+            android:layout_marginTop="5dp"
+            android:text="23岁"
+            android:textColor="@color/rer_color"
+            android:textSize="@dimen/text_size2" />
+
+        <TextView
+            android:id="@+id/eh_tv_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/eh_tv_name"
+            android:layout_below="@+id/eh_tv_sex"
+            android:layout_marginTop="5dp"
+            android:text="课程:民歌"
+            android:textColor="@color/gray_hint"
+            android:textSize="@dimen/text_size2" />
+
+
+        <TextView
+            android:id="@+id/eh_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/interval_right"
+            android:text="2016-07-24(星期日)"
+            android:textColor="@color/gray_hint"
+            android:textSize="@dimen/text_size2" />
+
+        <TextView
+            android:id="@+id/eh_tv_timetwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/eh_tv_time"
+            android:layout_marginRight="@dimen/interval_right"
+            android:layout_marginTop="5dp"
+            android:text="15:00~16:00"
+            android:textColor="@color/gray_hint"
+            android:textSize="@dimen/text_size2" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/interval_left"
+        android:paddingRight="@dimen/interval_right">
+
+        <EditText
+            android:id="@+id/eh_et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="请输入内容..."
+            android:minLines="3"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_hint"
+            android:textSize="@dimen/text_size2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/eh_ll_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/interval_right"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:background="@mipmap/common_edit_icon_enable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="附件"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size2" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/eh_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/interval_left"
+        android:layout_marginRight="@dimen/interval_right"
+        android:layout_marginTop="10dp"
+        android:columnWidth="3dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="3dp" />
+</LinearLayout>

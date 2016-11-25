@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <include layout="@layout/include_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/interval_left"
+        android:layout_marginRight="@dimen/interval_right"
+        android:textSize="@dimen/text_size2"
+        android:text="请在有效期内提供毕业证认证照片需保证头像及文字清晰可见"
+        android:textColor="@color/black"
+        />
+
+    <RelativeLayout
+        android:id="@+id/sa_rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/interval_right"
+        android:layout_marginLeft="@dimen/interval_left"
+        >
+
+        <ImageView
+            android:id="@+id/sa_rl_headImg"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:background="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:text="上传照片"
+            android:gravity="center"
+            android:background="@color/text_color3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size2"
+            />
+    </RelativeLayout>
+</LinearLayout>

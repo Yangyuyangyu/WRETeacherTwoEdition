@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@android:id/background"
+        android:drawable="@mipmap/ratingbar_off" /> <!--grade_offbantwo_icon-->
+    <item
+        android:id="@android:id/secondaryProgress"
+        android:drawable="@mipmap/ratingbar_off" />
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@mipmap/ratingbar_on" /> <!--grade_onban-->
+</layer-list>
+
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    &lt;!&ndash; 必须使用此id,drawable为 未选中 状态的图片 &ndash;&gt;
+    <item
+        android:id="@+id/rating_background"
+        android:drawable="@mipmap/rating_bar_1"/>
+    &lt;!&ndash; 必须使用此id,drawable为 半选中 状态的图片 &ndash;&gt;
+    <item
+        android:id="@+id/secondaryProgress"
+        android:drawable="@mipmap/rating_bar_6"/>
+    &lt;!&ndash; 必须使用此id,drawable为 全选中 状态的图片 &ndash;&gt;
+    <item
+        android:id="@+id/progress"
+        android:drawable="@mipmap/rating_bar_6"/>
+</layer-list>-->

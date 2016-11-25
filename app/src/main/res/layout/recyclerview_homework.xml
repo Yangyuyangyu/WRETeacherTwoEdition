@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/hw_rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/app_while_tv_bg"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/hw_img_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:background="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/hw_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/hw_img_head"
+            android:text="古典音乐"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size3" />
+
+        <TextView
+            android:id="@+id/hw_tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/hw_tv_name"
+            android:layout_below="@+id/hw_tv_name"
+            android:layout_marginTop="5dp"
+            android:text="23岁"
+            android:textColor="@color/rer_color"
+            android:textSize="@dimen/text_size2" />
+
+        <TextView
+            android:id="@+id/hw_tv_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/hw_tv_name"
+            android:layout_below="@+id/hw_tv_sex"
+            android:layout_marginTop="5dp"
+            android:text="课程:民歌"
+            android:textColor="@color/gray_hint"
+            android:textSize="@dimen/text_size2" />
+
+
+        <TextView
+            android:id="@+id/hw_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/interval_right"
+            android:text="2016-07-24(星期日)"
+            android:textColor="@color/gray_hint"
+            android:textSize="@dimen/text_size2" />
+
+        <TextView
+            android:id="@+id/hw_tv_timetwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/hw_tv_time"
+            android:layout_marginRight="@dimen/interval_right"
+            android:layout_marginTop="5dp"
+            android:text="15:00~16:00"
+            android:textColor="@color/gray_hint"
+            android:textSize="@dimen/text_size2" />
+
+
+        <TextView
+            android:id="@+id/hw_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hw_img_head"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:layout_marginTop="10dp"
+            android:text="评价的内容"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size3" />
+
+        <GridView
+            android:id="@+id/hw_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hw_tv_content"
+            android:layout_marginTop="10dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hw_gridview"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:layout_marginRight="@dimen/interval_right"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:id="@+id/hw_tv_ping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="已布置"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/hw_tv_ping"
+                android:background="@mipmap/common_edit_icon_enable" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainactivity_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <LinearLayout
+        android:id="@+id/mainactivity_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/mainactivity_rl_teach"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/mainactivity_btn_teach"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/tab_bot_bg_color"
+                android:drawableTop="@drawable/tab_teach_bg"
+                android:onClick="onTabClicked"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="教学"
+                android:textColor="@drawable/main_botton_text_color"
+                android:textSize="@dimen/text_size1" />
+
+            <TextView
+                android:id="@+id/mainactivity_unread_teach_teach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/em_unread_count_bg"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainactivity_rl_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/mainactivity_btn_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/tab_bot_bg_color"
+                android:drawableTop="@drawable/tab_message_bg"
+                android:onClick="onTabClicked"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="消息"
+                android:textColor="@drawable/main_botton_text_color"
+                android:textSize="@dimen/text_size1" />
+
+            <TextView
+                android:id="@+id/mainactivity_unread_message_number"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@mipmap/unred"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size7"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainactivity_rl_find"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/mainactivity_btn_find"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/tab_bot_bg_color"
+                android:drawableTop="@drawable/tab_find_bg"
+                android:onClick="onTabClicked"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="发现"
+                android:textColor="@drawable/main_botton_text_color"
+                android:textSize="@dimen/text_size1" />
+
+            <TextView
+                android:id="@+id/mainactivity_unread_find_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainactivity_rl_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/mainactivity_btn_mine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/tab_bot_bg_color"
+                android:drawableTop="@drawable/tab_mine_bg"
+                android:onClick="onTabClicked"
+                android:paddingBottom="2dip"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:text="我"
+                android:textColor="@drawable/main_botton_text_color"
+                android:textSize="@dimen/text_size1" />
+
+            <TextView
+                android:id="@+id/mainactivity_unread_mine_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/tab_hom_bom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wire"
+        android:layout_above="@id/mainactivity_buttom"
+        android:background="@color/halving_line_horizontal" />
+
+    <FrameLayout
+        android:id="@+id/mainactivity_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_hom_bom" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_pic_preview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context="com.teacherhelp.activity.personPic.photoview.PersonPicPreviewActivity">
+
+
+    <cn.finalteam.galleryfinal.widget.zoonview.PhotoView
+        android:id="@+id/preview_photoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

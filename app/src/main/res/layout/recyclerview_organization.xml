@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/organiza_rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/interval_left"
+        android:paddingRight="@dimen/interval_right"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/organiza_img_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/organiza_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="围绕教育"
+            android:textSize="@dimen/text_size3"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@+id/organiza_img_head"
+            android:layout_toRightOf="@+id/organiza_img_head"/>
+
+       <RatingBar
+            android:id="@+id/oratingbar_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            style="@style/MyRatingBar"
+            android:numStars="5"
+            android:rating="4"
+            android:isIndicator="true"
+            android:layout_marginBottom="5dp"
+           android:layout_marginLeft="-3dp"
+            android:layout_alignLeft="@+id/organiza_tv_name"
+            android:layout_alignBottom="@+id/organiza_img_head"
+            />
+
+        <TextView
+            android:id="@+id/organiza_tv_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.0"
+            android:textColor="@color/rer_color"
+            android:textSize="@dimen/text_size2"
+            android:layout_toRightOf="@+id/oratingbar_ratingbar"
+            android:layout_alignBottom="@+id/oratingbar_ratingbar"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

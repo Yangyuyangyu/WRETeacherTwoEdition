@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/organization_rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_while_tv_bg"
+        android:layout_marginBottom="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/organization_img_head"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:background="@drawable/organization_img_bg"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignTop="@+id/organization_img_head"
+            android:layout_toRightOf="@+id/organization_img_head"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/organization_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="民族声乐"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size3"
+                />
+
+            <TextView
+                android:id="@+id/organization_tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一对一"
+                android:textSize="@dimen/text_size2"
+                android:textColor="@color/rer_color"/>
+
+            <TextView
+                android:id="@+id/organization_tv_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="音乐"
+                android:textColor="@color/gray_hint"
+                android:textSize="@dimen/text_size2"/>
+
+            <TextView
+                android:id="@+id/organization_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90分钟"
+                android:textColor="@color/gray_hint"
+                android:textSize="@dimen/text_size2"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/organization_ll_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/organization_img_head"
+            android:layout_marginRight="@dimen/interval_right"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评分"
+                android:textSize="@dimen/text_size2"
+                android:textColor="@color/gray_hint"/>
+
+            <TextView
+                android:id="@+id/organization_tv_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textColor="@color/rer_color"
+                android:textSize="@dimen/text_size2"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <include layout="@layout/include_title"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_starttime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/app_while_tv_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始时间"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size3"
+                android:minHeight="40dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/interval_left"/>
+
+            <ImageView
+                android:id="@+id/img_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/hsjt"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/interval_right"/>
+
+            <TextView
+                android:id="@+id/tv_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-01-01"
+                android:textSize="@dimen/text_size3"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/img_one"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wire"
+            android:background="@color/halving_line_vertical"
+            android:layout_marginLeft="@dimen/interval_left"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_endtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/app_while_tv_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束时间"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size3"
+                android:minHeight="40dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/interval_left"/>
+
+            <ImageView
+                android:id="@+id/img_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/hsjt"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/interval_right"/>
+
+            <TextView
+                android:id="@+id/tv_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016-07-01"
+                android:textSize="@dimen/text_size3"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/img_two"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/wire"
+            android:background="@color/halving_line_vertical"/>
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size3"
+            android:textColorHint="@color/gray_hint"
+            android:hint="示例：担任深圳市某艺术培训学校专职教师，负责钢琴教学。"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:layout_marginRight="@dimen/interval_right"
+            android:background="@null"
+            android:minLines="3"
+            android:gravity="left"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size3"
+        android:background="@drawable/shape_login_button_background"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="@dimen/interval_left"
+        android:layout_marginRight="@dimen/interval_right"
+        android:minHeight="40dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

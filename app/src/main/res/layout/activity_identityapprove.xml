@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fadingEdge="none"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:layout_marginTop="10dp"
+            android:text="选择认证方式"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ia_rb_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="身份证"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size2" />
+
+                <RadioButton
+                    android:id="@+id/ia_rb_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="护照"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size2" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/ia_rl_head"
+                    android:layout_width="110dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="@dimen/interval_left">
+
+                    <ImageView
+                        android:id="@+id/ia_img_head"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/ic_launcher"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/ia_text_hand"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/text_color3"
+                        android:gravity="center"
+                        android:text="手持照片"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size2" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ia_rl_head"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/ia_rl_head"
+                    android:orientation="vertical">
+
+                    <com.teacherhelp.view.ClearEditText
+                        android:id="@+id/ia_et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/interval_right"
+                        android:background="@null"
+                        android:drawableLeft="@mipmap/id_card_icon_human"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:hint="请输入姓名(必填)"
+                        android:maxLength="5"
+                        android:minHeight="40dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_hint"
+                        android:textSize="@dimen/text_size2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/wire"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/halving_line_vertical" />
+
+                    <com.teacherhelp.view.ClearEditText
+                        android:id="@+id/ia_et_idcard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/interval_right"
+                        android:background="@null"
+                        android:drawableLeft="@mipmap/id_card_icon_card"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:hint="请输入证件号码(9位以上)"
+                        android:maxLength="18"
+                        android:minHeight="40dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_hint"
+                        android:textSize="@dimen/text_size2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/wire"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/halving_line_vertical" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ia_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/ia_rl_positive"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="@dimen/interval_left">
+
+                <ImageView
+                    android:id="@+id/ia_img_positive"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/ic_launcher"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_color3"
+                    android:gravity="center"
+                    android:text="正面照片"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size2" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:id="@+id/ia_rl_reverse"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="@dimen/interval_left">
+
+                <ImageView
+                    android:id="@+id/ia_img_reverse"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/ic_launcher"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_color3"
+                    android:gravity="center"
+                    android:text="反面照片"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size2" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="130dp"
+                android:layout_height="160dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/interval_left"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/example_touxiang">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/text_color3"
+                    android:gravity="center"
+                    android:text="案例示范"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size2" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginLeft="@dimen/interval_left"
+                android:layout_marginRight="@dimen/interval_right"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/example_text"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

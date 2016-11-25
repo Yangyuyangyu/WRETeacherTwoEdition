@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <include layout="@layout/include_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <com.teacherhelp.view.ClearEditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:layout_marginRight="@dimen/interval_right"
+            android:minHeight="40dp"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size3"
+            android:textColorHint="@color/gray_color"
+            android:hint="请填写教学特点"
+            android:singleLine="true"
+            android:maxLength="20"
+
+            />
+    </RelativeLayout>
+</LinearLayout>

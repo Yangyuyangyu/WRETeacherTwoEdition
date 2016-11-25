@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/app_while_tv_bg"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015年01月01日 - 2016年07月23日"
+            android:textColor="@color/rer_color"
+            android:textSize="@dimen/text_size3"
+            android:layout_margin="@dimen/interval_left"
+            />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人经历的内容"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size3"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:layout_marginRight="@dimen/interval_right"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</LinearLayout>

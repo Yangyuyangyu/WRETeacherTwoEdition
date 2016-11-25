@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--
+    <item android:state_checkable="true" android:drawable="@drawable/teach_kq_selected_large">
+        <shape>
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+
+    <item android:state_selected="true" android:drawable="@drawable/teach_kq_selected_large">
+        <shape>
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+-->
+
+    <item >
+        <shape >
+            <solid android:color="@color/white"/>
+            <stroke android:color="@color/gray_color" android:width="1dp"/>
+        </shape>
+    </item>
+</selector>

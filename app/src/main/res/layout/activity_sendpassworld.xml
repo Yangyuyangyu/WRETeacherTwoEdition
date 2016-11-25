@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <include layout="@layout/include_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:background="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:text="用户名:"
+            android:textColor="@color/gray_color"
+            android:textSize="@dimen/text_size3" />
+
+        <TextView
+            android:id="@+id/sendpassworld_tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:minHeight="40dp"
+            android:text="13458611541"
+            android:textColor="@color/gray_color"
+            android:textSize="@dimen/text_size3" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wire"
+        android:layout_marginLeft="@dimen/interval_left"
+        android:layout_marginRight="@dimen/interval_right"
+        android:layout_marginTop="10dp"
+        android:background="@color/halving_line_vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:background="@mipmap/ic_launcher" />
+
+        <com.teacherhelp.view.ClearEditText
+            android:id="@+id/sendpassworld_et_old"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/interval_right"
+            android:background="@null"
+            android:inputType="numberPassword"
+            android:gravity="center_vertical"
+            android:hint="请输入原密码"
+            android:maxLength="18"
+            android:minHeight="40dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_color"
+            android:textSize="@dimen/text_size3" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wire"
+        android:layout_marginLeft="@dimen/interval_left"
+        android:layout_marginRight="@dimen/interval_right"
+        android:layout_marginTop="10dp"
+        android:background="@color/rer_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:background="@mipmap/ic_launcher" />
+
+        <com.teacherhelp.view.ClearEditText
+            android:id="@+id/sendpassworld_et_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/interval_right"
+            android:background="@null"
+            android:inputType="numberPassword"
+            android:gravity="center_vertical"
+            android:hint="请输入新密码"
+            android:maxLength="18"
+            android:minHeight="40dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_color"
+            android:textSize="@dimen/text_size3" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wire"
+        android:layout_marginLeft="@dimen/interval_left"
+        android:layout_marginRight="@dimen/interval_right"
+        android:layout_marginTop="10dp"
+        android:background="@color/rer_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/interval_left"
+            android:background="@mipmap/ic_launcher" />
+
+        <com.teacherhelp.view.ClearEditText
+            android:id="@+id/sendpassworld_et_newtwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/interval_right"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请确认新密码"
+            android:inputType="numberPassword"
+            android:maxLength="18"
+            android:minHeight="40dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_color"
+            android:textSize="@dimen/text_size3" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/wire"
+        android:layout_marginLeft="@dimen/interval_left"
+        android:layout_marginRight="@dimen/interval_right"
+        android:layout_marginTop="10dp"
+        android:background="@color/rer_color" />
+</LinearLayout>

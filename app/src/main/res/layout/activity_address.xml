@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <include layout="@layout/include_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_rl_title"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="@dimen/interval_left"
+        android:paddingRight="@dimen/interval_right"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_locationtitle"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前地址:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size2"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size2"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:layout_toRightOf="@+id/tv_locationtitle"
+            android:layout_alignBaseline="@+id/tv_locationtitle"
+            android:minLines="2"
+            />
+    </RelativeLayout>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"/>
+</LinearLayout>
